@@ -1,0 +1,92 @@
+/* Basic Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.manuscript-mode { display: block; }
+.crt-mode { display: none; }
+
+body.dark .manuscript-mode { display: none; }
+body.dark .crt-mode { display: block; }
+
+body {
+  line-height: 1.6;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+header, footer {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--link);
+  font-weight: bold;
+}
+
+main section {
+  margin: 2rem 0;
+}
+
+.project {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  background-color: var(--bg);
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  body {
+    padding: 1rem;
+  }
+} 
+
+:root {
+  --bg: #fdfdfd;
+  --text: #111;
+  --link: #7e2f2f;
+  --accent: #d9c18f;
+  --font-body: 'Cardo', serif;
+  --font-heading: 'IM Fell English', serif;
+}
+
+[data-theme="dark"] {
+  --bg: #000;
+  --text: #3f3;
+  --link: #0ff;
+  --accent: #444;
+  --font-body: 'IBM Plex Mono', monospace;
+  --font-heading: 'Inter', monospace;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-heading);
+}

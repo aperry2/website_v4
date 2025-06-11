@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Template</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Your Name</h1>
+    <nav>
+      <ul>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <label>
+    <input type="checkbox" id="theme-toggle" />
+    Switch to CRT Mode
+  </label>
+  
+
+  <main>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Ritual Video</h3>
+        <p>A green screen-based collaborative video performance examining ritual and embodiment.</p>
+      </div>
+      <div class="project">
+        <h3>Ritual Unbinding of an Amazon Alexa</h3>
+        <p>A live performance ritual dismantling an Amazon Alexa to critique AI servitude and techno-capitalism.</p>
+      </div>
+      <div class="project">
+        <h3>Scrolling in the Walled Garden</h3>
+        <p>A browser-based simulation that examines enclosure, repetition, and surveillance through endless scrolling.</p>
+      </div>
+      <div class="project">
+        <h3>Data Reliquary</h3>
+        <p>Sculptural works using lab-grown crystals to to transform our Terms of Service agreements with Big Tech into relics.</p>
+      </div>
+      <div class="project">
+        <h3>Illuminated Manuscript</h3>
+        <p> Projection mapping illuminates a physical book with digital light, transforming it into an animated text.</p>
+      </div>
+      <div class="project">
+        <h3>The Gross Gloss (Print Edition)</h3>
+        <p>A print-based artist’s book using coded glyphs, vector graphics, and generative processes to obscure and reveal language and belief.</p>
+      </div>
+      <div class="project">
+        <h3>The Gross Gloss (Web Edition)</h3>
+        <p>A hypertextual digital artwork combining dithering aesthetics, web design, and AI-generated images to invoke  mystic pre-modern texts.</p>
+      </div>
+      <div class="project">
+        <h3>Autoimages</h3>
+        <p>A series of AI-generated images that challenge authorship and the erasure of the artist's hand in post-photographic practice.</p>
+      </div>
+      <div class="project">
+        <h3>Technoshrine</h3>
+        <p>A sculptural installation incorporating machined parts and miniature computing to produce contemporary devotional altars for the religion of technology.</p>
+      </div>
+      <div class="project">
+        <h3>The Brazen Head</h3>
+        <p>A  visual interface coded in Processing inspired by a mythic automaton said to be able to access all knowledge.</p>
+      </div>
+      <div class="project">
+        <h3>Tracing the Materiality of a Cellular Connection</h3>
+        <p>A short animation using 3D photogrammetry to depict invisible infrastructures of mobile communication.</p>
+      </div>
+      <div class="project">
+        <h3>The Mysticism of Home Assistants</h3>
+        <p>A video synthesis project using analog tools to conjure ghostly portraits of domestic AI.</p>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>Brief biography or artist statement goes here.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: alan.perry.studio [at] gmail [dot] com</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Alan Perry</p>
+  </footer>
+</body>
+</html>
+
+<script>
+  const toggle = document.getElementById('theme-toggle');
+  const html = document.documentElement;
+
+  // Default to light theme
+  html.setAttribute('data-theme', 'light');
+
+  toggle.addEventListener('change', () => {
+    const newTheme = toggle.checked ? 'dark' : 'light';
+    html.setAttribute('data-theme', newTheme);
+  });
+</script>
