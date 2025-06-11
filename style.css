@@ -1,5 +1,8 @@
 /* Basic Reset */
 
+@import url('https://fonts.googleapis.com/css2?family=Cardo&family=IBM+Plex+Mono&family=IM+Fell+English&family=Inter&display=swap');
+
+
 * {
   margin: 0;
   padding: 0;
@@ -15,9 +18,41 @@ body {
   color: var(--text);
 }
 
-header, footer {
+header,
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
   text-align: center;
-  padding: 1rem 0;
+  padding: 2rem 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+
+.image-container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+
+  margin: 1rem 0;
+}
+
+.image-container img {
+  max-width: 90%;
+  height: auto;
+  display: block;
+}
+
+.fleuron {
+  text-align: center;
 }
 
 nav ul {
@@ -25,7 +60,8 @@ nav ul {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin-top: 0.5rem;
+  margin: 0;
+  padding: 0;
 }
 
 nav a {
@@ -55,7 +91,7 @@ main section {
   body {
     padding: 1rem;
   }
-} 
+}
 
 :root {
   --bg: #fdfdfd;
@@ -81,6 +117,51 @@ body {
   font-family: var(--font-body);
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: var(--font-heading);
+}
+
+.theme-toggle-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#theme-toggle {
+  display: none;
+}
+
+.theme-toggle {
+  position: relative;
+  width: 60px;
+  height: 30px;
+  background: var(--accent);
+  border-radius: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px;
+  font-size: 18px;
+  color: var(--text);
+  transition: background 0.3s ease;
+}
+
+.theme-toggle .toggle-ball {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+  background: var(--text);
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+#theme-toggle:checked+.theme-toggle .toggle-ball {
+  transform: translateX(30px);
 }
