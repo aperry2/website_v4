@@ -16,8 +16,18 @@
         <li><a href="#projects">Projects</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><a href="#technical">Technical Details</a></li>
       </ul>
     </nav>
+
+    <h3>Description Mode</h3>
+    <div id="descSelector">
+      <label><input type="radio" name="desc" value="default" checked> Common Reader</label>
+      <label><input type="radio" name="desc" value="curatorial"> Critical-Theoretical</label>
+      <label><input type="radio" name="desc" value="poetic"> Poetic</label>
+    </div>
+
+
     <div class="theme-toggle-wrapper">
       <input type="checkbox" id="theme-toggle" aria-label="Toggle dark mode">
       <label for="theme-toggle" class="theme-toggle">
@@ -34,16 +44,63 @@
 
   <main>
     <section id="projects">
-      <h2>Projects</h2>
-      <div class="project">
+      <h2>Select Projects</h2>
+
+      <div id="filters">
+        <select id="yearFilter">
+          <option value="">All Years</option>
+          <option value="2019">2024</option>
+          <option value="2023">2023</option>
+          <option value="2024">2024</option>
+          <option value="2025">2025</option>
+          <!-- Add more -->
+        </select>
+
+        <select id="themeFilter">
+          <option value="ai">All Themes</option>
+          <option value="ai">AI</option>
+          <option value="big tech">Big Tech</option>
+          <option value="book">Book</option>
+          <option value="communication technology">Communication Technology</option>
+          <option value="creative coding">Creative Coding</option>
+          <option value="media theory">Media Theory</option>
+          <option value="neo-medievalisms">Neo-Medievalisms</option>
+          <option value="poetics">Poetics</option>
+          <option value="post-internet">Post-Internet</option>
+          <option value="ritual">Ritual</option>
+          <option value="technomysticism">Technomysticism</option>
+          <option value="video synthesis">Video Synthesis</option>
+          <!-- Add more -->
+        </select>
+
+        <select id="mediumFilter">
+          <option value="">All Media</option>
+          <option value="artist-book">Artist's Book</option>
+          <option value="performance">Performance</option>
+          <option value="photography">Photography</option>
+          <option value="projection mapping">Projection Mapping</option>
+          <option value="sculpture">Sculpture</option>
+          <option value="simulation">Simulation</option>
+          <option value="video">Video</option>
+          <option value="web-art">Web Art</option>
+        </select>
+      </div>
+
+      <br>
+
+      <div class="project" data-theme="ritual,ai,big tech,technomysticism" data-year="2025" data-medium="video">
         <h3>Ritual Video</h3>
         <div class="image-container">
           <img src="images/ritualVideo_2.png" alt="Ritual Video still">
         </div>
         <p>A green screen-based collaborative video performance examining ritual and embodiment.</p>
+        <p class="desc default">Standard description text here.</p>
+        <p class="desc curatorial" style="display: none;">Curatorial voice here.</p>
+        <p class="desc poetic" style="display: none;">Poetic interpretation here.</p>
+
       </div>
 
-      <div class="project">
+      <div class="project" data-theme="ritual,ai,big tech,technomysticism" data-year="2024" data-medium="performance">
         <h3>Ritual Unbinding of an Amazon Alexa</h3>
         <div class="image-container">
           <img src="images/ritualUnbinding.png" alt="Ritual Unbinding image">
@@ -51,7 +108,8 @@
         <p>A live performance ritual dismantling an Amazon Alexa to critique AI servitude and techno-capitalism.</p>
       </div>
 
-      <div class="project">
+      <div class="project" data-theme="poetics,post-internet,big tech,neo-medievalisms" data-year="2023"
+        data-medium="web-art,simulation">
         <h3>Scrolling in the Walled Garden</h3>
         <div class="image-container">
           <img src="images/scrolling.PNG" alt="Scrolling simulation screenshot">
@@ -59,7 +117,9 @@
         <p>A browser-based simulation that examines enclosure, repetition, and surveillance through endless scrolling.
         </p>
       </div>
-      <div class="project">
+
+      <div class="project" data-theme="post-internet,big tech,neo-medievalisms,technomysticism" data-year="2025"
+        data-medium="sculpture">
         <h3>Data Reliquary</h3>
         <div class="image-container">
           <img src="images/reliquary.png" alt="">
@@ -67,14 +127,17 @@
         <p>Sculptural works using lab-grown crystals to to transform our Terms of Service agreements with Big Tech into
           relics.</p>
       </div>
-      <div class="project">
+
+      <div class="project" data-theme="book,media theory,neo-medievalisms" data-year="2019"
+        data-medium="projection mapping">
         <h3>Illuminated Manuscript</h3>
         <div class="image-container">
           <img src="images/Illuminated.png" alt="Illuminated manuscript projection">
         </div>
         <p>Projection mapping illuminates a physical book with digital light, transforming it into an animated text.</p>
       </div>
-      <div class="project">
+
+      <div class="project" data-theme="neo-medievalisms" data-year="2025" data-medium="projection mapping">
         <h3>Erber Grene</h3>
         <div class="image-container">
           <img src="images/erberGrene.png" alt="Projection mapping on church altar">
@@ -82,7 +145,9 @@
         <p>A site-specific video installation projecting imagery inspired by a 14th Century poem onto church
           architecture.</p>
       </div>
-      <div class="project">
+
+      <div class="project" data-theme="neo-medievalisms, book,media theory,technomysticism" data-year="2025"
+        data-medium="artist-book">
         <h3>The Gross Gloss (Print Edition)</h3>
         <div class="image-container">
           <img src="images/Book_Display.png" alt="">
@@ -90,7 +155,9 @@
         <p>A print-based artist’s book using coded glyphs, vector graphics, and generative processes to obscure and
           reveal language and belief.</p>
       </div>
-      <div class="project">
+
+      <div class="project" data-theme="neo-medievalisms, book,media theory,web art, creative coding,technomysticism"
+        data-year="2025" data-medium="artist-book">
         <h3>The Gross Gloss (Web Edition)</h3>
         <div class="image-container">
           <img src="images/gg_web.PNG" alt="Gross Gloss web screenshot">
@@ -98,7 +165,8 @@
         <p>A hypertextual digital artwork combining dithering aesthetics, web design, and AI-generated images to invoke
           mystic pre-modern texts.</p>
       </div>
-      <div class="project">
+
+      <div class="project" data-theme="ai,media theory" data-year="2025" data-medium="photography">
         <h3>Autoimages</h3>
         <div class="image-container">
           <img src="images/Autoimages.png" alt="an AI-generated image and its prompt data">
@@ -106,7 +174,9 @@
         <p>A series of AI-generated images that challenge authorship and the erasure of the artist's hand in
           post-photographic practice.</p>
       </div>
-      <div class="project">
+
+      <div class="project" data-theme="neo-medievalisms, ritual,media theory,technomysticism" data-year="2025"
+        data-medium="sculpture">
         <h3>Technoshrine</h3>
         <div class="image-container">
           <img src="images/technoshrine.png" alt="">
@@ -114,7 +184,9 @@
         <p>A sculptural installation incorporating machined parts and miniature computing to produce contemporary
           devotional altars for the religion of technology.</p>
       </div>
-      <div class="project">
+
+      <div class="project" data-theme="neo-medievalisms, creative coding,media theory,technomysticism" data-year="2025"
+        data-medium="artist-book">
         <h3>The Brazen Head</h3>
         <div class="image-container">
           <img src="images/brazenHead_v1.png" alt="a CRT screen and keyboard">
@@ -122,14 +194,17 @@
         <p>A visual interface coded in Processing inspired by a mythic automaton said to be able to access all
           knowledge.</p>
       </div>
-      <div class="project">
+
+      <div class="project" data-theme="communication technology,media theory" data-year="2023" data-medium="video">
         <h3>Tracing the Materiality of a Cellular Connection</h3>
         <div class="image-container">
           <img src="images/tracing.png" alt="CGI and photogrammetry video screenshot">
         </div>
         <p>A short animation using 3D photogrammetry to depict invisible infrastructures of mobile communication.</p>
       </div>
-      <div class="project">
+
+      <div class="project" data-theme="neo-medievalisms, video synthesis,media theory,technomysticism" data-year="2024"
+        data-medium="video">
         <h3>The Mysticism of Home Assistants</h3>
         <div class="image-container">
           <img src="images/mysticism.png" alt="black and green analog video screenshot">
@@ -137,10 +212,12 @@
         <p>A video synthesis project using analog tools to conjure ghostly portraits of domestic AI.</p>
       </div>
     </section>
+
     <p class="fleuron">[:::]</p>
+
     <section id="about">
       <h2>About</h2>
-      <p>Alan Perry is a Chicago‑based new media artist, educator, and technosorcerer whose multidisciplinary practice
+      <p>Alan Perry is a Chicago‑based new media artist, educator, and technomystic whose multidisciplinary practice
         traverses creative coding, interactive electronics, video, sculpture, and AI-augmented image-making. He holds a
         BFA in Photo/Image Making from Colorado State University (2013) and an MFA in Art & Technology Studies from the
         School of the Art Institute of Chicago (2019), where he is now a lecturer.</p>
@@ -181,6 +258,17 @@
     <section id="contact">
       <h2>Contact</h2>
       <p>Email: alan.perry.studio [at] gmail [dot] com</p>
+      <p>Instagram: <a href="www.instagram.com/alanjperry">@alanjperry</a></p>
+    </section>
+
+    <section id="technical">
+      <h2>Technical Information</h2>
+      <p>This website was designed with inspiration from <a href="https://chelsea.technology">Chlesea Thompto</a>, <a
+          href="https://emrysmerlin.xyz/">Emrys Brandt</a>, and the <a
+          href="https://www.sustainablewebmanifesto.com/">Sustainable Web Manifesto</a>. In order to keep a low data
+        footprint, the images on this site are dithered, 800 pixels on the longest side, and roughly 50-150 kb each. If
+        you would like access to (contemporary) web- and print-resolution images for publication, please do not hesitate
+        to email me.</p>
     </section>
   </main>
 
@@ -205,6 +293,39 @@
         document.documentElement.setAttribute('data-theme', 'light');
         localStorage.setItem('theme', 'light');
       }
+    });
+
+    document.querySelectorAll('#yearFilter, #themeFilter, #mediumFilter').forEach(el => {
+      el.addEventListener('change', () => {
+        const year = document.getElementById('yearFilter').value;
+        const theme = document.getElementById('themeFilter').value;
+        const medium = document.getElementById('mediumFilter').value;
+
+        document.querySelectorAll('.project').forEach(project => {
+          const projectYear = project.getAttribute('data-year');
+          const projectThemes = project.getAttribute('data-theme').split(',');
+          const projectMediums = project.getAttribute('data-medium').split(',');
+
+          const matchYear = !year || projectYear === year;
+          const matchTheme = !theme || projectThemes.includes(theme);
+          const matchMedium = !medium || projectMediums.includes(medium);
+
+          project.style.display = (matchYear && matchTheme && matchMedium) ? 'block' : 'none';
+        });
+      });
+    });
+
+
+    document.querySelectorAll('input[name="desc"]').forEach(input => {
+      input.addEventListener('change', () => {
+        const selected = input.value;
+
+        document.querySelectorAll('.project').forEach(project => {
+          project.querySelectorAll('.desc').forEach(p => {
+            p.style.display = p.classList.contains(selected) ? 'block' : 'none';
+          });
+        });
+      });
     });
   </script>
 
