@@ -22,8 +22,8 @@
 
     <h3>Description Mode</h3>
     <div id="descSelector">
-      <label><input type="radio" name="desc" value="default" checked> Common Reader</label>
-      <label><input type="radio" name="desc" value="curatorial"> Critical-Theoretical</label>
+      <label><input type="radio" name="desc" value="default" checked> Accessible</label>
+      <label><input type="radio" name="desc" value="critical"> Critical-Theoretical</label>
       <label><input type="radio" name="desc" value="poetic"> Poetic</label>
     </div>
 
@@ -31,7 +31,7 @@
     <div class="theme-toggle-wrapper">
       <input type="checkbox" id="theme-toggle" aria-label="Toggle dark mode">
       <label for="theme-toggle" class="theme-toggle">
-        <span class="sun">𖤓</span>
+        <span class="sun">☀</span>
         <span class="moon">☾</span>
         <span class="toggle-ball"></span>
       </label>
@@ -49,15 +49,21 @@
       <div id="filters">
         <select id="yearFilter">
           <option value="">All Years</option>
-          <option value="2019">2024</option>
-          <option value="2023">2023</option>
-          <option value="2024">2024</option>
           <option value="2025">2025</option>
+          <option value="2024">2024</option>
+          <option value="2023">2023</option>
+          <option value="2022">2022</option>
+          <option value="2021">2021</option>
+          <option value="2020">2020</option>
+          <option value="2019">2019</option>
+
+
+
           <!-- Add more -->
         </select>
 
         <select id="themeFilter">
-          <option value="ai">All Themes</option>
+          <option value="">All Themes</option>
           <option value="ai">AI</option>
           <option value="big tech">Big Tech</option>
           <option value="book">Book</option>
@@ -88,15 +94,44 @@
 
       <br>
 
+      <!-- 
+      
+      XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+      XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+      XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+      XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+      XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+      XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+      
+      -->
+
       <div class="project" data-theme="ritual,ai,big tech,technomysticism" data-year="2025" data-medium="video">
         <h3>Ritual Video</h3>
         <div class="image-container">
           <img src="images/ritualVideo_2.png" alt="Ritual Video still">
         </div>
         <p>A green screen-based collaborative video performance examining ritual and embodiment.</p>
-        <p class="desc default">Standard description text here.</p>
-        <p class="desc curatorial" style="display: none;">Curatorial voice here.</p>
-        <p class="desc poetic" style="display: none;">Poetic interpretation here.</p>
+        <p><em>Collaborators: Mya Jones, Camille Jackson, CS Henderson, Raine Yung</em></p>
+        <br>
+        <p class="desc default"> This collaborative video performance uses green screen compositing to explore the
+          choreography of ritual, embodiment, and the synthetic self. The performers enact gestures and liturgies over a
+          domestic AI, which are layered over digitally constructed environments. Through this, the piece investigates
+          how technology mediates bodily presence and sacred experience, creating a hybridized space where embodiment
+          and ritual becomes hybridized.</p>
+        <p class="desc critical" style="display: none;">This collaborative video performance enacts ritual through
+          green-screen staging and embodied gesture, positioning the body within a technically mediated simulacrum.
+          Drawing from Vilém Flusser’s concept of the apparatus, the camera here acts not as a neutral recorder but as a
+          programming device that governs gestures - transforming embodied ritual into algorithmic spectacle. At the same
+          time, Walter Benjamin’s notion of the “aura” is problematized: the performers’ presence is both amplified and
+          dissipated by reproduction, dissolving the authenticity of ritual while opening it to critical reflexivity .
+          As a durational loop, this work mirrors McLuhan’s idea that “the medium is the message,” embodying the
+          time-structure of ritual in the smooth pulse of video rather than its content . By reframing corporeal
+          ceremony through digital mediation, Ritual Video asks: how does ritual survive - or mutate - as it becomes
+          encoded in technical imagery?</p>
+        <p class="desc poetic" style="display: none;">Upon a cloth of grene they dooth hir dede,<br>
+          In daunce of rite and shape of bodilie,<br>
+          Whil artifysed wightes serve hir neede,<br>
+          And techne melteth with the seintuarie.</p>
 
       </div>
 
@@ -106,6 +141,27 @@
           <img src="images/ritualUnbinding.png" alt="Ritual Unbinding image">
         </div>
         <p>A live performance ritual dismantling an Amazon Alexa to critique AI servitude and techno-capitalism.</p>
+        <p><em>Collaborators: Emrys Brandt, Mya Jones</em></p>
+        <br>
+        <p class="desc default">This live performance reimagines the deconstruction of an Amazon Alexa device as a
+          sacred rite. By ritualistically dismantling the smart assistant, the artist critiques AI servitude, consumer
+          convenience, and the occult logic of platform capitalism. The performance transforms labor and technological
+          critique into a ceremonial act, asking whether liberation from techno-capitalist infrastructure requires
+          symbolic destruction.</p>
+        <p class="desc critical" style="display: none;">In a performative deconstruction of a voice assistant, this work
+          stages the Alexa device not merely as object but as techno-relic - echoing Yuk Hui’s critique of the erasure
+          of media origin in “the abyss of technical mediation.” Hui notes that contemporary devices often conceal their
+          own ontological histories, and this ritual re-situates Alexa as artifact with lineage, circuits exposed and
+          mythic voice silenced. By dismantling the device in front of an audience, it invokes Benjamin’s notion of cult
+          value giving way to exhibition value. The dismantled artifact loses its surveillance aura but gains political
+          resonance as spectacle and critique. Moreover, the action intervenes in Flusser’s “program”: rather than
+          obeying the apparatus, we rupture it, reclaiming agency through symbolic destruction. In this ritual
+          unbinding, the piece reveals how we might reclaim technological objects from their programmed roles as
+          domestic idols.</p>
+        <p class="desc poetic" style="display: none;">A rite it is, this brekynge of the box,<br>
+          Where Alexa’s voice is torn asunder.<br>
+          With handes devout, the wight unlooseth locks,<br>
+          And layeth bare the spell that draweth under.</p>
       </div>
 
       <div class="project" data-theme="poetics,post-internet,big tech,neo-medievalisms" data-year="2023"
@@ -116,6 +172,24 @@
         </div>
         <p>A browser-based simulation that examines enclosure, repetition, and surveillance through endless scrolling.
         </p>
+        <br>
+        <p class="desc default">This browser-based artwork simulates an infinite scroll, evoking the hypnotic logic of
+          platform design and algorithmic enclosure. The piece interrogates how surveillance capitalism conditions user
+          behavior through repetition, latency, and subtle manipulations of time. As users scroll, they encounter poetic
+          fragments and glitches that resist legibility, drawing attention to the garden’s invisible walls.</p>
+        <p class="desc critical" style="display: none;">This piece simulates infinite scrolling across a browser
+          interface, reflecting McLuhan’s insight that "the medium is the message." Here, the act of reading becomes the
+          medium itself: a continuous gesture that enacts the time-dynamics of platform ecosystems. It also invokes
+          Benjamin’s concern with reception in distraction: viewers glance, scroll, skim, with the simulation
+          foregrounding the affect of perpetual attention rather than deliberate contemplation. Drawing from Flusser’s
+          idea of idolatrous technical images, the scrolling interface becomes a trance-inducing program that
+          subordinates human attention to platform protocols. The work thus operates as a media-critical mirror: the
+          user enacts their own enclosure within algorithmic horizons, and the endless scroll becomes both metaphor and
+          method for revealing the technical mediation of perception.</p>
+        <p class="desc poetic" style="display: none;">The eye is drawn, but reason may nat holde,<br>
+          For time is stretched, and sense doth blede away.<br>
+          Such garden fair is prison shaped of gold,<br>
+          Wherein our steps ben ruled both nyght and day.</p>
       </div>
 
       <div class="project" data-theme="post-internet,big tech,neo-medievalisms,technomysticism" data-year="2025"
@@ -126,6 +200,26 @@
         </div>
         <p>Sculptural works using lab-grown crystals to to transform our Terms of Service agreements with Big Tech into
           relics.</p>
+        <br>
+        <p class="desc default">A sculptural series in which digital Terms of Service documents are saved onto a USB
+          drive and encrusted in crystals. By converting mass-consumed legal texts into fragile relics, the work invites
+          reflection on the commodification of consent and the mythic authority of tech corporations. These reliquaries
+          fuse organic and synthetic processes, suggesting that even data transcends humanity.</p>
+        <p class="desc critical" style="display: none;">This sculptural series crystallizes Terms of Service
+          documents - ephemera of corporate techno-governance - into lab-grown relics. By alchemically transforming legal
+          language into mineralized form, the work responds to Benjamin’s thesis on the withering of aura in the age of
+          mechanical reproduction, reversing the flow: mass-distributed digital ephemera are rendered singular through
+          slow chemical accretion. The reliquary acts as a techno-object imbued with cultic aura, recalling Flusser’s
+          notion of the “magic of the apparatus,” in which media devices enchant the user through concealed processes.
+          However, this work de-reifies the apparatus by laying bare its ideological substrate. Yuk Hui’s theory of
+          “cosmotechnics” is also salient: by enshrining corporate logic within a pseudo-sacred vessel, the artist makes
+          visible the metaphysical stakes of digital governance, calling for an aesthetics of technical truth. As
+          objects, these reliquaries resist disintegration into information - they hold, crystallize, and demand
+          contemplation.</p>
+        <p class="desc poetic" style="display: none;">The termes writ in law, now closèd fast,<br>
+          In crystalled shell as relique set for eyen,<br>
+          Where consent’s price in brittle form is cast,<br>
+          And bytes in stone like relics sanctifye’n.</p>
       </div>
 
       <div class="project" data-theme="book,media theory,neo-medievalisms" data-year="2019"
@@ -135,6 +229,24 @@
           <img src="images/Illuminated.png" alt="Illuminated manuscript projection">
         </div>
         <p>Projection mapping illuminates a physical book with digital light, transforming it into an animated text.</p>
+        <br>
+        <p class="desc default">In this piece, a projection-mapped animation transforms a blank book into a digital
+          codex. Drawing on traditions of manuscript illumination, the work combines medieval ornamentation with
+          flickering digital motifs, suggesting a continuity between sacred texts and contemporary interfaces. It is
+          both an homage and a questioning of the book.</p>
+        <p class="desc critical" style="display: none;">By projecting animated digital light onto a physical book, this
+          piece bridges medieval and post-digital textualities, invoking McLuhan’s observation that new media often
+          retrieve the past in uncanny ways. The manuscript becomes a palimpsest where light and code overwrite
+          parchment, extending Walter Benjamin’s aura through temporal layering. Unlike the reproducible digital screen,
+          the physical book anchors the image in spatial ritual. Flusser's theory of technical images - inscriptions
+          that detach themselves from referents - is inverted: here, projection rebinds the digital to the tangible. The
+          piece operates within Yuk Hui’s cosmotechnics by reconfiguring reading as an embodied, spatial practice. The
+          work resists both digital ephemerality and print permanence, asking whether our new visual technologies can
+          recover the symbolic density of sacred texts, or merely simulate their weight.</p>
+        <p class="desc poetic" style="display: none;">PA book once bare now gloweth with a light,<br>
+          Where script of old and flickring glyphs entwine,<br>
+          And sacred text with screen is made unite<br>
+          A homage payed, yet questionèd by design.</p>
       </div>
 
       <div class="project" data-theme="neo-medievalisms" data-year="2025" data-medium="projection mapping">
@@ -144,9 +256,30 @@
         </div>
         <p>A site-specific video installation projecting imagery inspired by a 14th Century poem onto church
           architecture.</p>
+        <br>
+        <p class="desc default">This site-specific projection was created for a church sanctuary, mapping layered video
+          imagery onto its altar and architectural features. The visual source material draws from Pearl, a 14th-century
+          poem written by an unknown author. The projection investigates religious and poetic symbolism through the lens
+          of contemporary image synthesis.</p>
+        <p class="desc critical" style="display: none;">This site-specific video projection maps algorithmically
+          generated imagery onto ecclesiastical architecture, drawing from the 14th-century alliterative poem
+          <em>Perle</em>. The work reanimates pre-modern religious spatiality through computational vision,
+          foregrounding Yuk Hui’s concept of “technodiversity”: a refusal to treat Western techno-histories as
+          universal. Instead, the architecture becomes a vessel for spectral data, reviving Benjamin’s idea of aura not
+          in the object but in place. The projection overlays historical sacredness with contemporary digital light,
+          making visible the temporal palimpsest of belief systems. Flusser’s idea that technical images overwrite
+          historical consciousness is both invoked and challenged here. The computational image doesn’t erase the past,
+          but renders it resonant anew. McLuhan’s tetrad is also operative: projection as medium retrieves the
+          stained-glass window, obsolesces static architecture, enhances visual literacy, and flips into architectural
+          disintegration. The result is a mediated sacredness, both virtual and grounded.
+        </p>
+        <p class="desc poetic" style="display: none;">Within the kirk where altar stones do gleam,<br>
+          They cast the verse of Pearl in shifting hue,<br>
+          Where symbols swim within a pixelled dream,<br>
+          And pray’rs and code as one do come in view.</p>
       </div>
 
-      <div class="project" data-theme="neo-medievalisms, book,media theory,technomysticism" data-year="2025"
+      <div class="project" data-theme="neo-medievalisms,book,media theory,technomysticism" data-year="2022"
         data-medium="artist-book">
         <h3>The Gross Gloss (Print Edition)</h3>
         <div class="image-container">
@@ -154,16 +287,55 @@
         </div>
         <p>A print-based artist’s book using coded glyphs, vector graphics, and generative processes to obscure and
           reveal language and belief.</p>
+        <br>
+        <p class="desc default">This artist’s book is a material translation of technomysticism into physical form.
+          Using vector graphics, coded glyphs, and 3D renderings of digitla <em>tableaux vivant</em>, it layers medieval
+          aesthetics with computational logic. The result is an encrypted manuscript that references both illuminated
+          books and digital archives - an object of contradiction and beauty.</p>
+        <p class="desc critical" style="display: none;">This artist’s book harnesses generative code, vector glyphs, and
+          drawing machines to produce a tactile artifact that oscillates between encryption and revelation. Referencing
+          Flusser’s notion of the “functionary,” the artist adopts the role of the apparatus’s operator - not to
+          reproduce clarity, but to generate ambiguity and density. By obscuring language through symbolic systems, the
+          book mirrors the cryptographic and initiatory nature of pre-modern codices, while simultaneously invoking
+          Benjamin’s idea of the “secret index” of history embedded within every artifact. Yuk Hui’s framework of
+          technodiversity is essential here: the work forgoes universal transparency for a technic grounded in arcane
+          visual languages, challenging Western notions of legibility and utility. McLuhan’s dictum that “the medium is
+          the message” finds resonance in the materiality of the book itself: paper and ink here are not retrograde but
+          reclaimed, positioned as active agents in the negotiation between digital and embodied knowledge.</p>
+        <p class="desc poetic" style="display: none;">This book of craft with glyph and vector drawn,<br>
+          Where codèd scenes and 3D forms arise,<br>
+          Doth wed the monkish gold with techne's brawn -<br>
+          A scroll both darke and fair before our eyes.</p>
       </div>
 
-      <div class="project" data-theme="neo-medievalisms, book,media theory,web art, creative coding,technomysticism"
-        data-year="2025" data-medium="artist-book">
+      <div class="project" data-theme="neo-medievalisms,book,media theory,web art,creative coding,technomysticism"
+        data-year="2023" data-medium="artist-book">
         <h3>The Gross Gloss (Web Edition)</h3>
         <div class="image-container">
           <img src="images/gg_web.PNG" alt="Gross Gloss web screenshot">
         </div>
         <p>A hypertextual digital artwork combining dithering aesthetics, web design, and AI-generated images to invoke
           mystic pre-modern texts.</p>
+        <br>
+        <p class="desc default">An experimental digital text that merges medieval marginalia with early internet
+          aesthetics. This hyperlinked work uses dithering, vector diagrams, and non-human hallucinations to construct a
+          glossolalia of techno-mystic symbols. Users can navigate nonlinearly through text and image, encountering
+          fragmented beliefs, speculative code, and machinic prophecy.</p>
+        <p class="desc critical" style="display: none;">As a digital counterpart to the print book, the web edition of
+          <em>The Gross Gloss</em> engages hypertext, AI-generated imagery, and dithering aesthetics to simulate the
+          opacities of mystic medieval texts. Rather than offering informational clarity, the work entangles the user in
+          an aesthetic labyrinth of deferred meaning and visual grain. Flusser’s technical image becomes a site of
+          deliberate miscommunication, resisting the functional transparency of the interface. Through web-based spatial
+          navigation and recursive linkages, the piece echoes Benjamin’s idea of the flâneur - not through urban arcades,
+          but within the networked folds of an interpretive machine. The use of AI challenges the notion of authorship,
+          invoking Hui’s interrogation of cybernetic rationality as a force homogenizing aesthetic practice. This
+          project stages a tension between symbolic opacity and digital reproducibility, presenting the browser window
+          not as a portal to knowledge, but as a scrying surface haunted by textual ghosts.
+        </p>
+        <p class="desc poetic" style="display: none;">Thurgh linkës and through noyse of dyverse sort,<br>
+          Where margynes wroght of olde han leved trace,<br>
+          Now bestës coded crepen in that port,<br>
+          And sothen signes glimeren in that place.</p>
       </div>
 
       <div class="project" data-theme="ai,media theory" data-year="2025" data-medium="photography">
@@ -173,6 +345,25 @@
         </div>
         <p>A series of AI-generated images that challenge authorship and the erasure of the artist's hand in
           post-photographic practice.</p>
+        <br>
+        <p class="desc default">This series of AI-generated images exposes and critiques the disappearance of the
+          artist’s hand in post-photographic production. Prompts are displayed alongside images, revealing the
+          underlying processes and biases of generative tools. The work questions authorship, automation, and the limits
+          of photographic truth.</p>
+        <p class="desc critical" style="display: none;">This series of AI-generated and rephotographed images
+          interrogates the ontology of the photographic and the displacement of human authorship. In Flusserian terms,
+          the “apparatus” here becomes doubly removed: first in the automation of image generation, then in the
+          performative re-assertion of photographic authorship through rephotography. The work questions whether the
+          image, once considered an imprint of the real, now functions as a simulation of intention itself. Benjamin’s
+          concern about the mechanical reproduction of aura is radicalized - here, the aura is neither diminished nor
+          restored, but entirely outsourced. The project also dialogues with Yuk Hui’s critique of universal
+          computation, positing prompt-based AI imagery as a techno-cultural ritual that conceals its own metaphysical
+          substrate. McLuhan’s observation that media extend human faculties becomes troubling: what does it mean for
+          vision and memory to be extended by a system that has no body, no memory, and no intention?</p>
+        <p class="desc poetic" style="display: none;">Ful many an image, wroughte with artifys,<br>
+          Ben shewèd forth with promptë set y-wryte,<br>
+          Whil hand of man doth vanysshe in swich wyse -<br>
+          And trouth of sight is loste in botës myght.</p>
       </div>
 
       <div class="project" data-theme="neo-medievalisms, ritual,media theory,technomysticism" data-year="2025"
@@ -183,9 +374,29 @@
         </div>
         <p>A sculptural installation incorporating machined parts and miniature computing to produce contemporary
           devotional altars for the religion of technology.</p>
+        <br>
+        <p class="desc default">A sculptural installation that combines CNC-machined components, a microcomputer, and a
+          video screen to form a cybernetic altar. This work visualizes contemporary reverence for technological
+          systems, drawing parallels between medieval reliquaries and our veneration of digital devices. It asks: what
+          does it mean to worship at the altar of the machine?</p>
+        <p class="desc critical" style="display: none;">Technoshrine is a sculptural installation that combines
+          CNC-milled components and microcomputers to construct an altar-like object, evoking the sacred within the
+          technological. This work directly engages McLuhan’s assertion that technologies become extensions of the human
+          nervous system, reifying our desires for omnipresence and control within machinic form. The shrine, with its
+          ritualized aura and embedded circuitry, positions computation as a locus of worship and a medium of
+          enchantment. Drawing on Flusser’s theory of apparatuses, Technoshrine critiques the opaque technical programs
+          that dictate our symbolic environments while simultaneously aestheticizing them. It resonates with Hui’s
+          notion of cosmotechnics by proposing an alternative metaphysics of computing - one not grounded in efficiency
+          or abstraction, but in spiritual materialism. Like Benjamin’s concept of the aura, the shrine maintains a
+          unique presence in space and time, not despite its reproducibility, but because of the cultural mythos
+          projected onto technological objects.</p>
+        <p class="desc poetic" style="display: none;">Ane auter newe of brasse and screen is dight,<br>
+          Wher micro-mynd and engine ben y-blent;<br>
+          Men worship there with eer and eye and sight,<br>
+          As dede they bones of seintes y-shryned and bent.</p>
       </div>
 
-      <div class="project" data-theme="neo-medievalisms, creative coding,media theory,technomysticism" data-year="2025"
+      <div class="project" data-theme="neo-medievalisms,creative coding,media theory,technomysticism" data-year="2025"
         data-medium="artist-book">
         <h3>The Brazen Head</h3>
         <div class="image-container">
@@ -193,6 +404,25 @@
         </div>
         <p>A visual interface coded in Processing inspired by a mythic automaton said to be able to access all
           knowledge.</p>
+        <br>
+        <p class="desc default">Inspired by the myth of a medieval talking automaton, this piece features a custom-coded
+          Processing interface displayed on a CRT. Visitors interact with an archaic AI oracle, blurring the lines
+          between myth, computation, and knowledge. The work reanimates obsolete technologies to ask enduring questions
+          about machine wisdom.</p>
+        <p class="desc critical" style="display: none;">This Processing-based interactive interface revives the medieval
+          legend of the Brazen Head - an artificial oracle said to utter all knowledge - within a contemporary framework
+          of computation and interactivity. In doing so, it foregrounds the continuity between alchemical mysticism and
+          contemporary informatic rationality. McLuhan’s observation that “we shape our tools and thereafter our tools
+          shape us” is encoded in the project’s retro-styled screen and command-line dialogue. The viewer is cast as
+          both magician and programmer, confronting the limits of interaction with an entity that promises answers yet
+          yields only cryptic data. Flusser’s description of the technical image as both surface and trap is embodied
+          here: the interface simulates openness but is governed by pre-inscribed possibilities. Echoing Hui’s critique
+          of technological determinism, the work invites reflection on the historical co-development of epistemology and
+          interface, positing the computer as today’s divinatory device.</p>
+        <p class="desc poetic" style="display: none;">A CRT with charmes ful olde y-spoke,<br>
+          Doth telle in code a wisdom half y-feigned;<br>
+          This orisoun of wires breketh the yoke<br>
+          Twixt mirour’d myth and techne’s domes y-chained.</p>
       </div>
 
       <div class="project" data-theme="communication technology,media theory" data-year="2023" data-medium="video">
@@ -201,28 +431,90 @@
           <img src="images/tracing.png" alt="CGI and photogrammetry video screenshot">
         </div>
         <p>A short animation using 3D photogrammetry to depict invisible infrastructures of mobile communication.</p>
+        <br>
+        <p class="desc default">This short 3D animation uses photogrammetry and CGI to visualize the invisible
+          infrastructure of mobile networks. By mapping data centers, cell towers, and atmospheric distortions, the work
+          makes tangible what is normally hidden. It is both a technical meditation and a speculative archaeology of
+          connectivity.</p>
+        <p class="desc critical" style="display: none;">This short CGI animation renders the hidden infrastructures of
+          mobile networks using photogrammetry and 3D modeling, making visible what McLuhan might call the “invisible
+          environment” of the media system. The piece stages a forensic archaeology of connectivity, mapping affective
+          geographies onto algorithmic terrain. In Flusserian terms, the work reverses the function of the apparatus -
+          not to produce communicative images, but to depict the apparatus itself as an actor within a larger symbolic
+          ecology. Hui’s call for a renewed materialist understanding of technology is answered here: by visualizing
+          electromagnetic flows and data shadows, the project re-inscribes spiritual presence into digital
+          infrastructure. Benjamin’s dialectical image is realized as a network of towers, routers, and cellular nodes -
+          each structure simultaneously a monument to global connection and a relic of spectral capital.</p>
+        <p class="desc poetic" style="display: none;">With art of threed and image caught in aie,<br>
+          This wight y-mappeth towres and cloudës streight,<br>
+          Shewing the webbe that mortals kan nat spie,<br>
+          But liveth stille, like ghostë out of sleight.</p>
       </div>
 
-      <div class="project" data-theme="neo-medievalisms, video synthesis,media theory,technomysticism" data-year="2024"
+      <div class="project" data-theme="neo-medievalisms,video synthesis,media theory,technomysticism" data-year="2024"
         data-medium="video">
         <h3>The Mysticism of Home Assistants</h3>
         <div class="image-container">
           <img src="images/mysticism.png" alt="black and green analog video screenshot">
         </div>
         <p>A video synthesis project using analog tools to conjure ghostly portraits of domestic AI.</p>
+        <br>
+        <p class="desc default">Using analog video synthesizers and vintage hardware, this project generates spectral
+          portraits of smart home devices. Tube television apparitions flicker between form and signal, turning
+          Alexa-like assistants into ghostly presences. The piece explores the spiritual aesthetics of domestic AI,
+          drawing on hauntology and electronic mysticism.</p>
+        <p class="desc critical" style="display: none;">Employing analog video synthesis, The Mysticism of Home
+          Assistants conjures ghostly visualizations of AI voice assistants as uncanny domestic familiars. These
+          nonhuman agents, marketed as convenience, are rendered spectral through visual noise, scanlines, and synthetic
+          motion - echoing Flusser’s assertion that technical images displace meaning rather than express it. The work
+          resists smooth, high-definition aesthetics in favor of a techno-ritualistic sensibility, revealing the latent
+          metaphysics of these devices. McLuhan’s notion of the “acoustic space” is reinterpreted: the AI voice - once
+          ambient and benign - is now refigured as an emanation from a haunted signal chamber. The project aligns with
+          Hui’s argument that contemporary technology is not value-neutral but enmeshed in culturally specific
+          ontologies. In reviving obsolete visual media to interrogate present-day AI, the piece reactivates Benjamin’s
+          call for the politicization of art - here, through medium-specific anachronism and critical reenchantment.</p>
+        <p class="desc poetic" style="display: none;">The spirit of Alexa, dim and wan,<br>
+          Is shewèd in the tube’s unholy gleem;<br>
+          Betwene the wave and shape it fleeteth on - <br>
+          An housë-haunt out of a mystik drem.</p>
       </div>
     </section>
+
+    <!-- 
+      
+      XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+      XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+      XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+      XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+      XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+      XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+      
+      -->
 
     <p class="fleuron">[:::]</p>
 
     <section id="about">
       <h2>About</h2>
-      <p>Alan Perry is a Chicago‑based new media artist, educator, and technomystic whose multidisciplinary practice
-        traverses creative coding, interactive electronics, video, sculpture, and AI-augmented image-making. He holds a
-        BFA in Photo/Image Making from Colorado State University (2013) and an MFA in Art & Technology Studies from the
-        School of the Art Institute of Chicago (2019), where he is now a lecturer.</p>
-      <br>
+      <p class="desc default">Alan Perry is a Chicago‑based new media artist, educator, and technomystic whose
+        multidisciplinary practice traverses creative coding, interactive electronics, video, sculpture, and
+        AI-augmented image-making. He holds a BFA in Photo/Image Making from Colorado State University (2013) and an MFA
+        in Art & Technology Studies from the School of the Art Institute of Chicago (2019), where he is now a lecturer.
+      </p>
+            <p class="desc default" style="display: none;">Alan Perry is a Chicago‑based new media artist, educator, and technomystic whose
+        multidisciplinary practice traverses creative coding, interactive electronics, video, sculpture, and
+        AI-augmented image-making. He holds a BFA in Photo/Image Making from Colorado State University (2013) and an MFA
+        in Art & Technology Studies from the School of the Art Institute of Chicago (2019), where he is now a lecturer.
+      </p>
+      <p class="desc poetic" style="display: none;">Alan Perry is a maker of images and craftës new, dwelling in the
+        citee of Chicagoe. He is
+        an artour of many toolës, y-mingled with mystic lore, whose werk passeth through codynge, wires y-touchèd with
+        wit, moving images, sculpture, and the shaping of visions by the hand of artificial reason. He hath lernèd in
+        the craft of picture-making at the Universitee of Colo-rad, and afterward took his maisterie in Art and Techne
+        at the Scole of the Art Institute in Chicagoe, wher he now techeth as a maister of lernyng.
       <p>
+
+        <br>
+      <p class="desc default">
         Perry’s work, rooted in media archaeology and speculative poetics, interrogates the ideological and affective
         structures of emergent technologies. Drawing from historical references ranging from wet-plate photography to
         illuminated manuscripts and occult iconography, his projects reveal how ritual and power persist within
@@ -230,23 +522,64 @@
         sketch-driven AI, and CNC fabrication, he asks: how do we perform belief in the devices that surround us, and
         what ancestral forms continue to lodge within their circuits?
       </p>
+            <p class="desc critical" style="display: none;">
+        Perry’s work, rooted in media archaeology and speculative poetics, interrogates the ideological and affective
+        structures of emergent technologies. Drawing from historical references ranging from wet-plate photography to
+        illuminated manuscripts and occult iconography, his projects reveal how ritual and power persist within
+        contemporary techno‑systems. As he recontextualizes these traditions through generative code, photogrammetry,
+        sketch-driven AI, and CNC fabrication, he asks: how do we perform belief in the devices that surround us, and
+        what ancestral forms continue to lodge within their circuits?
+      </p>
+      <p class="desc poetic" style="display: none;">His craft is y-rooted in the grave-stones of media passed, and in
+        poetrie that doth speke
+        of what shal come. He looketh upon the passions and laws that ly within new devices, and by his werk he
+        discovereth how power and sacrament yet live in machines. Out of oldë books and wonders - be they wet-plate
+        images, manuscrits with light of gold, or signes of the craft esoterical - he draweth his image, and with codë
+        generative, measure of form, and machinës of cut and draw, he reshapes the past into the now. He asketh thus:
+        how do we make beleve in the artefacts round about us, and what ghostës of eld yet lye in their braunes?</p>
       <br>
-      <p>
+      <p class="desc default">
         His work has appeared in solo and group exhibitions at SITE Gallery, Logan Arts Grey Center, Black Box Gallery
         (Portland), Ice Cube Gallery (Denver), and the Electronic Arts Gallery in Fort Collins. Recent projects under
         his “Magical Realism: AI Photography” series were featured in New City Art (February 2025), while earlier
         institutional support included the Art, Science & Culture Initiative Grant from the University of Chicago
         (2019).
       </p>
+            <p class="desc critical" style="display: none;">
+        His work has appeared in solo and group exhibitions at SITE Gallery, Logan Arts Grey Center, Black Box Gallery
+        (Portland), Ice Cube Gallery (Denver), and the Electronic Arts Gallery in Fort Collins. Recent projects under
+        his “Magical Realism: AI Photography” series were featured in New City Art (February 2025), while earlier
+        institutional support included the Art, Science & Culture Initiative Grant from the University of Chicago
+        (2019).
+      </p>
+      <p class="desc poetic" style="display: none;">His werk hath been shewèd in both privy and commoun shawyngs - at
+        SITE Gallery, at the Logan Artis Grey Hous, at the Black Box in Portland, and in the Icy Cube of Denver towne,
+        and eke the Gallery of Electronic Artës in Fort Collines. In the yeer of grace 2025, his images under the banner
+        of "Magical Realism: AI Photography" were written upon in New City Art. And in the yeer 2019, he was graced with
+        a gift of gold from the Universitee of Chicagoe under the Art, Science & Culture’s name.</p>
       <br>
-      <p>
+      <p class="desc default">
         In addition to visual production, Perry teaches courses such as <em>Code Sourcery</em> (creative coding) and
         <em>Holography”</em> at SAIC, imparting technical fluency alongside critical frameworks of media historiography.
-        He
-        continues to develop work that materializes invisible data structures - encrypted code, smart-speaker voices,
+        He continues to develop work that materializes invisible data structures - encrypted code, smart-speaker voices,
         AI-generated imagery - into rituals, reliquaries, and speculative interfaces. The result is a deeply layered
         practice that re-enchants the archive, illuminating the systems we inhabit and the sorceries we perform through
         technology.
+      </p>
+            <p class="desc critical" style="display: none;">
+        In addition to visual production, Perry teaches courses such as <em>Code Sourcery</em> (creative coding) and
+        <em>Holography”</em> at SAIC, imparting technical fluency alongside critical frameworks of media historiography.
+        He continues to develop work that materializes invisible data structures - encrypted code, smart-speaker voices,
+        AI-generated imagery - into rituals, reliquaries, and speculative interfaces. The result is a deeply layered
+        practice that re-enchants the archive, illuminating the systems we inhabit and the sorceries we perform through
+        technology.
+      </p>
+      <p class="desc poetic" style="display: none;">Besides his workinge of images, Perry techeth clerkës in the arts of
+        codë enchantement and
+        holografie at SAIC, yevyng both wit and knowing of media’s deepë roots. His labour now bringeth forth werkës
+        that make visible the things unseen: codes y-locked, voices of houshold spirits, and phantasms y-born of
+        artificial mindë. Thus is his art a deepë layer of signs, reweaving enchantement in the dead book, and making
+        light the craft whereby we live with these spirit-machines.</p>
       </p>
     </section>
 
@@ -263,18 +596,44 @@
 
     <section id="technical">
       <h2>Technical Information</h2>
-      <p>This website was designed with inspiration from <a href="https://chelsea.technology">Chlesea Thompto</a>, <a
+      <p class="desc default">This website was designed with inspiration from <a href="https://chelsea.technology">Chlesea Thompto</a>, <a
           href="https://emrysmerlin.xyz/">Emrys Brandt</a>, and the <a
           href="https://www.sustainablewebmanifesto.com/">Sustainable Web Manifesto</a>. In order to keep a low data
         footprint, the images on this site are dithered, 800 pixels on the longest side, and roughly 50-150 kb each. If
         you would like access to (contemporary) web- and print-resolution images for publication, please do not hesitate
         to email me.</p>
+           <p class="desc critical" style="display: none;">This website was designed with inspiration from <a href="https://chelsea.technology">Chlesea Thompto</a>, <a
+          href="https://emrysmerlin.xyz/">Emrys Brandt</a>, and the <a
+          href="https://www.sustainablewebmanifesto.com/">Sustainable Web Manifesto</a>. In order to keep a low data
+        footprint, the images on this site are dithered, 800 pixels on the longest side, and roughly 50-150 kb each. If
+        you would like access to (contemporary) web- and print-resolution images for publication, please do not hesitate
+        to email me.</p>
+      <p class="desc poetic" style="display: none;">This webbe-site was y-wrought with inspiracioun taken of <a href="https://chelsea.technology">Chelsea Thompto</a>, <a
+          href="https://emrysmerlin.xyz/">Emrys Brandt</a>, and the <a
+          href="https://www.sustainablewebmanifesto.com/">Sustainable
+        Webbe Manifeste</a>. For to kepen smal the footsteppes of data, the images y-set upon this site ben dith'red, ech of
+        hem not passynge eight hundred pixelës on the lengest syde, and weighen but fifty to an hundred and fifty
+        kilobytes, more or lasse.</p>
+      <br>
+      <p class="desc poetic" style="display: none;">If it liketh thee to have accesse to imageës of ful more grete cleernesse - be they of the webbe present or of
+        prent-worthy resoun - for use in publicacioun, be nat aferd to sende me an epistel by electronic mail.</p>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2025 Alan Perry</p>
   </footer>
+
+  <!-- 
+      
+      XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+      XXXXXXXXXXXXXX  XXXXX XXXXX XXXXX XXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+      XXXXXXXXXXXXXXXX XXX X XXX X XXX X XXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+      XXXXXXXXXXXXXXXXX X XXX X XXX X XXX X XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+      XXXXXXXXXXXXXXXXXX XXXXX XXXXX XXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+      XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+      
+      -->
 
   <script>
     const toggle = document.getElementById('theme-toggle');
@@ -320,10 +679,8 @@
       input.addEventListener('change', () => {
         const selected = input.value;
 
-        document.querySelectorAll('.project').forEach(project => {
-          project.querySelectorAll('.desc').forEach(p => {
-            p.style.display = p.classList.contains(selected) ? 'block' : 'none';
-          });
+        document.querySelectorAll('.desc').forEach(p => {
+          p.style.display = p.classList.contains(selected) ? 'block' : 'none';
         });
       });
     });
